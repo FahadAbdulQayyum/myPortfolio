@@ -1,0 +1,319 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap'); */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --white: #fff;
+    --favourite: #ffc500;
+    --favourite1: rgb(211, 35, 211);
+    /* --favourite: rgb(240, 181, 72); */
+    /* --favourite: orange; */
+}
+
+body {
+    background-color: rgb(240, 235, 235);
+}
+
+i {
+    font-size: 23px !important;
+}
+
+p {
+    font-size: 13px;
+    color: gray;
+}
+
+button {
+    background-color: var(--favourite);
+    padding: 8px 20px;
+    outline: none;
+    border: 0;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+button span {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    width: fit-content;
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+button span i {
+    position: absolute;
+    top: 5px;
+    /* color: #000; */
+    background-color: #fff;
+    border-radius: 50px;
+    font-size: 27px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    padding: 60px 110px 0;
+}
+
+.container .leftContainer {
+    /* margin: 25px 0; */
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    /* padding: 10px 0; */
+    width: 30%;
+    /* height: 500px; */
+    height: 600px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.container .leftContainer .profImg {
+    height: 250px;
+    /* height: 300px; */
+    /* overflow: hidden; */
+}
+
+.container .leftContainer .myProfile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}    
+.container .leftContainer .myProfile h3 {
+    text-transform: uppercase;
+    display: flex;
+    font-size: 16px;
+}
+
+.container .leftContainer .myProfile .profHead {
+    /* margin: auto; */
+    margin: 20px 20px 0 20px;
+}
+
+.container .leftContainer .profImg {
+    margin-top: -15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.container .leftContainer .profImg img {
+    height: 240px;
+    clip-path: polygon(0 15%, 100% 0, 100% 87%, 0% 100%);
+    padding-top: 10px;
+    margin-left: 85px;
+}
+
+.container .leftContainer .myProfile .profImg .profInfo {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 220px;
+}
+
+.container .leftContainer .myProfile .profImg .profInfo .marker .round {
+    height: 40px;
+    width: 40px;
+    background-color: var(--favourite);
+    border-radius: 50px;
+    margin-bottom: 20px;
+    border-top: 1.5px solid #fff;
+    border-left: 1.5px solid #fff;
+    border-right: 1.5px solid #fff;
+    box-shadow: 0px 2px 10px lightgray;
+    z-index: 9;
+    /* overflow: hidden; */
+    display: flex;
+}
+
+.container .leftContainer .myProfile .profImg .profInfo .marker .round img {
+    height: 30px;
+    margin: 2px;
+}
+
+.container .leftContainer .myProfile .profImg .profInfo .marker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+    position: relative;
+}
+
+.container .leftContainer .myProfile .profImg .profInfo .marker::after {
+    content: "";
+    height: 200px;
+    /* height: 100%; */
+    width: 1px;
+    background-color: lightgrey;
+    position: absolute;
+    /* z-index: -1; */
+}
+
+.container .leftContainer .myProfile .profImg .profInfo .info {
+    margin-top: 52px;
+}
+
+.container .leftContainer .myProfile .profImg .profInfo .info span {
+    color: #000;
+    font-size: 13.5px;
+}
+
+
+.container .leftContainer .myProfile .profImg .profInfo .info p {
+    margin: 15px 0;
+}
+
+
+.container .leftContainer .myProfile .profImg .profInfo .marker .dot {
+    height: 8px;
+    width: 8px;
+    background-color: var(--favourite);
+    border-radius: 50px;
+    margin: 11.4px;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .leftContainer .myProfile .profImg .profInfo .marker .dot::after {
+    content: "";
+    height: 1px;
+    width: 1px;
+    padding: 1.5px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+.container .leftContainer .myProfile .profImg .profInfo .info button {
+    margin-top: 50px;
+}
+
+.container .leftContainer .myProfile .profImg .profInfo .info button span i {
+    padding: 2px 3.5px;
+    font-size: 22px !important;
+}
+
+.container .rightContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .rightContainer .cont {
+    background-color: var(--white);
+    margin: 0 0 35px 25px;
+}
+.container .rightContainer .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: .4s;
+}
+.container .rightContainer .navbar ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: .4s;
+}
+.container .rightContainer .navbar ul li {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+.container .rightContainer .navbar ul li:not(.origin):hover {
+    cursor: pointer;
+    color: var(--favourite);
+    transform: scale(1.1);
+}
+
+
+.container .upperContainer .navbar .leftNav .origin {
+    background-color: var(--favourite);
+    width: 70px;
+    height: 70px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.container .upperContainer .navbar .rightNav {
+    margin: 0 10px 0 0;
+    transition: .4s;
+}
+
+.container .upperContainer .navbar .rightNav ul li:nth-child(1):hover i {
+    color: blue;
+    transform: scale(1.2);
+}
+
+.container .upperContainer .navbar .rightNav ul li:nth-child(2):hover i {
+    color: royalblue;
+    transform: scale(1.2);
+}
+
+.container .upperContainer .navbar .rightNav ul li:nth-child(3):hover i {
+    color: pink;
+    transform: scale(1.2);
+}
+
+.container .upperContainer .navbar .rightNav ul li:nth-child(4):hover i {
+    /* border-radius: 20px; */
+    /* padding: 2px 3px; */
+    /* border: 1px solid; */
+    transform: scale(1.2);
+}
+
+.container .upperContainer .navbar .rightNav ul li i {
+    font-size: 15px !important;
+}
+.container .upperContainer .navbar .rightNav ul li button {
+    background-color: var(--favourite);
+    padding: 8px 20px;
+    outline: none;
+    border: 0;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container .upperContainer .navbar .rightNav ul li button span {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    width: fit-content;
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 14px;
+}
+/* .container .upperContainer .navbar .rightNav ul li button span:nth-last-child(1) {
+    position: absolute;
+} */
+
+.container .upperContainer .navbar .rightNav ul li button span i {
+    position: absolute;
+    top: 5px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50px;
+    font-size: 27px !important;
+}
