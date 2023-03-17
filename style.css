@@ -17,6 +17,7 @@
 
 body {
     background-color: rgb(240, 235, 235);
+    overflow-x: hidden;
 }
 
 i {
@@ -72,6 +73,7 @@ button span i {
     background-color: var(--white);
     /* padding: 10px 0; */
     width: 30%;
+    min-width: 250px;
     /* height: 500px; */
     height: 600px;
     border-radius: 5px;
@@ -241,7 +243,7 @@ button span i {
 
 .container .rightContainer .navbar ul li:not(.origin):hover {
     cursor: pointer;
-    color: var(--favourite);
+    color: var(--favourite) !important;
     transform: scale(1.1);
 }
 
@@ -260,17 +262,17 @@ button span i {
 }
 
 .container .upperContainer .navbar .rightNav ul li:nth-child(1):hover i {
-    color: blue;
+    color: blue !important;
     transform: scale(1.2);
 }
 
 .container .upperContainer .navbar .rightNav ul li:nth-child(2):hover i {
-    color: royalblue;
+    color: royalblue !important;
     transform: scale(1.2);
 }
 
 .container .upperContainer .navbar .rightNav ul li:nth-child(3):hover i {
-    color: pink;
+    color: pink !important;
     transform: scale(1.2);
 }
 
@@ -317,3 +319,138 @@ button span i {
     border-radius: 50px;
     font-size: 27px !important;
 }
+
+/* responsiveness section starts */
+
+@media screen and (max-width: 1240px) {
+    .container .rightContainer .navbar ul li {
+        padding: 0 10px;
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .container .rightContainer .navbar ul li {
+        padding: 0 7px;
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 1075px) {
+    .container .rightContainer .navbar ul li {
+        padding: 0 5px;
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .container .rightContainer .navbar ul li {
+        padding: 0 3.53px;
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .container .upperContainer .navbar .rightNav ul li button {
+        padding: 5px 10px;
+    }
+    .container .upperContainer .navbar .rightNav ul li button span i {
+        font-size: 1.28rem !important;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .container .rightContainer .navbar ul li {
+        padding: 0 8px;
+        font-size: .8rem;
+    }
+    .container .leftContainer {
+        /* margin-bottom: 40px; */
+        /* width: 95%; */
+        width: 100%;
+        margin: 0 auto 40px auto;
+    }
+    .container .leftContainer  {
+        height: 95vh;
+    }
+    .container .leftContainer .profImg img {
+        height: 52vh;
+        margin: auto;
+    }
+    .container .leftContainer .myProfile .profImg .profInfo {
+        top: 380px;
+    }
+    .container .rightContainer {
+        margin: -10px;
+    }
+}
+
+@media screen and (max-width: 823px) {
+    .container .rightContainer .navbar ul li {
+        padding: 0 5px;
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .container .rightContainer .navbar ul li {
+        padding: 0 3px;
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 733px) {
+    .container .rightContainer .navbar .leftNav ul li:not(.origin) {
+        /* visibility: invisible; */
+        display: none;
+    }
+}
+
+@media screen and (max-width: 733px) {
+    .container .upperContainer .navbar .rightNav ul li button {
+        position: relative;
+        /* background-color: transparent; */
+    }
+
+    .container .upperContainer .navbar .rightNav ul li button span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 20px;
+        /* margin-bottom: 15px; */
+    }
+    .container .upperContainer .navbar .rightNav ul li button span:nth-child(1) {
+        display: none;
+        /* position: absolute; */
+        /* top: -90px; */
+        /* visibility: hidden; */
+        /* background-color: transparent; */
+    }
+    .container .upperContainer .navbar .rightNav ul li button span i {
+        border: 1px solid;
+    }
+}
+
+@media screen and (max-width: 432px) {
+    .container .rightContainer .navbar .rightNav ul li i,
+    .container .rightContainer .navbar ul i {
+    /* .container .upperContainer .navbar .rightNav ul li i { */
+        font-size: .6rem !important;
+    }
+    .container .rightContainer .navbar .leftNav .origin,
+    .container .rightContainer .navbar {
+        height: 10vh;
+        /* width: 100%; */
+    }
+    .container .rightContainer .navbar .leftNav li.origin {
+        width: 100%;
+    }
+}
+
+/* responsiveness section ends */
