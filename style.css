@@ -170,11 +170,9 @@ button span i {
     font-size: 13.5px;
 }
 
-
 .container .leftContainer .myProfile .profImg .profInfo .info p {
     margin: 15px 0;
 }
-
 
 .container .leftContainer .myProfile .profImg .profInfo .marker .dot {
     height: 8px;
@@ -272,7 +270,8 @@ button span i {
 }
 
 .container .upperContainer .navbar .rightNav ul li:nth-child(3):hover i {
-    color: pink !important;
+    /* color: pink !important; */
+    color: #d62976 !important;
     transform: scale(1.2);
 }
 
@@ -407,7 +406,7 @@ button span i {
 @media screen and (max-width: 733px) {
     .container .rightContainer .navbar .leftNav ul li:not(.origin) {
         /* visibility: invisible; */
-        display: none;
+        /* display: none; */
     }
 }
 
@@ -437,12 +436,104 @@ button span i {
     }
 }
 
-@media screen and (max-width: 432px) {
-    .container .rightContainer .navbar .rightNav ul li i,
-    .container .rightContainer .navbar ul i {
-    /* .container .upperContainer .navbar .rightNav ul li i { */
-        font-size: .6rem !important;
+@media screen and (max-width: 650px) {
+    .container .rightContainer .navbar .leftNav ul li:not(.origin) {
+        /* visibility: invisible; */
+        display: none;
     }
+    .container .leftContainer {
+        height: 85vh;
+    }
+    .container .leftContainer .profImg {
+        margin-top: -15px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .container .leftContainer .profImg img {
+        height: 350px;
+        clip-path: polygon(0 15%, 100% 0, 100% 87%, 0% 100%);
+        padding-top: 10px;
+        margin-left: 85px;
+    }
+    .container .leftContainer .myProfile .profImg .profInfo {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 320px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .container .leftContainer {
+        height: 68vh;
+    }
+    .container .leftContainer .profImg img {
+        height: 250px;
+        margin-top: 5px;
+    }
+    .container .leftContainer .myProfile .profImg .profInfo {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 230px;
+    }
+    .container .leftContainer .myProfile .profImg .profInfo .info button {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 485px) {
+    .container .leftContainer {
+        height: 62vh;
+    }
+    .container .leftContainer .profImg img {
+        height: 200px;
+    }
+    .container .leftContainer .myProfile .profImg .profInfo {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 180px;
+    }
+    /* .container .rightContainer {
+        width: 105%;
+        background-color: orange;
+        margin: auto;
+    } */
+    .container .rightContainer .lowerContainer,
+    .container .rightContainer .upperContainer {
+        width: 250px;
+        /* width: 100%; */
+        margin: 0 10px 30px 10px;
+    }
+    .container .leftContainer .myProfile .profImg .profInfo .info button {
+        margin-top: 15px;
+    }
+
+}
+
+@media screen and (max-width: 432px) {
+    .container {
+        margin: auto !important;
+        padding: 30px 89px;
+    }
+    .container .leftContainer {
+        max-height: 70vh;
+        height: 62vh;
+        min-height: 55vh;
+    }
+    .container .leftContainer .profImg img {
+        height: 189px;
+    }
+    .container .leftContainer .myProfile .profImg .profInfo {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 175px;
+    }
+
     .container .rightContainer .navbar .leftNav .origin,
     .container .rightContainer .navbar {
         height: 10vh;
@@ -450,6 +541,56 @@ button span i {
     }
     .container .rightContainer .navbar .leftNav li.origin {
         width: 100%;
+    }
+    .container .rightContainer {
+        /* width: 300px; */
+        width: 100%;
+        margin: auto;
+    }
+    .container .rightContainer .navbar .leftNav li.origin,
+    .container .rightContainer .navbar .rightNav ul li {
+        margin: auto;
+    }
+    .container .rightContainer .navbar .leftNav li.origin,
+    .container .rightContainer .upperContainer {
+        /* height: 9vh !important; */
+        /* height: 8vh !important; */
+        /* height: 7vh !important; */
+    }
+    .container .rightContainer .upperContainer {
+        margin: 0 auto 40px !important;
+    }
+    .container .rightContainer .lowerContainer,
+    .container .rightContainer .upperContainer {
+        margin: auto;
+    }
+    .container .rightContainer .navbar .leftNav li.origin,
+    .container .rightContainer .upperContainer {
+        height: 4vh !important;
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+    }
+    .container .rightContainer .upperContainer .navbar {
+        display: flex;
+        justify-content: space-between !important;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .container {
+        margin: auto;
+        padding: 50px;
+    }
+    .container .leftContainer .profImg img {
+        /* height: 88%; */
+        margin-left: 15px;
+    }
+@media screen and (max-width: 345px) {
+    .container {
+        padding: 10px 20px;
+    }
     }
 }
 
