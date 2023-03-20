@@ -11,6 +11,8 @@
     /* --white: #fff; */
     --white: #ffffff;
     --dim-white: #f4f4f4;
+    /* --dim-white: #fefefe; */
+    /* --dim-white: #fdfdfd; */
     /* --dim-white: #fafafa; */
     --favourite: #ffc500;
     --favourite1: rgb(211, 35, 211);
@@ -21,8 +23,8 @@
 
 body {
     background-color: rgb(240, 235, 235);
-    /* background-color: #fafafa; */
     overflow-x: hidden;
+    background-image: url('./assets/bg.png');
 }
 
 i {
@@ -331,7 +333,8 @@ button span i {
 .container .rightContainer .lowerContainer .aboutMe {
     padding: 50px 30px;
     background-color: #ffffff;
-    border-radius: 0 0 10px 10px;
+    /* border-radius: 0 0 10px 10px; */
+    border-radius: 10px;
     position: relative;
 }
 
@@ -343,8 +346,10 @@ button span i {
 
 .container .rightContainer .lowerContainer .aboutMe .underline {
     height: 8px;
-    width: 9%;
-    bottom: 155px;
+    /* width: 9%; */
+    width: 75px;
+    /* bottom: 155px; */
+    bottom: 69%;
     position: absolute;
     background-color: var(--underline);
 }
@@ -366,9 +371,11 @@ button span i {
 }
 
 .container .rightContainer .lowerContainer .myServices .underline {
-    height: 8px;
-    width: 11%;
-    bottom: 236px;
+    height: 10px;
+    /* width: 11.2%; */
+    width: 95px;
+    /* bottom: 239px; */
+    bottom: 76.9%;
     position: absolute;
     background-color: var(--underline);
 }
@@ -385,10 +392,11 @@ button span i {
     width: 100%;
     padding: 10px;
     border-radius: 10px;
+    transform: .9s;
 }
 
 .container .rightContainer .lowerContainer .myServices .cards .card .logo {
-    border: 1px solid lightgray;
+    border: 2px solid lightgray;
     background-color: var(--dim-white);
     width: 30px;
     padding: 6px 16px;
@@ -397,6 +405,12 @@ button span i {
     justify-content: center;
     border-radius: 50px;
 }
+
+.container .rightContainer .lowerContainer .myServices .cards .card:hover .logo {
+    cursor: pointer;
+    background-color: var(--favourite);
+}
+
 .container .rightContainer .lowerContainer .myServices .cards .card .logo img {
     height: 20px;
 }
@@ -519,6 +533,11 @@ button span i {
     .container .upperContainer .navbar .rightNav ul li button span i {
         border: 1px solid;
     }
+    .container .rightContainer .lowerContainer .myServices .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -566,6 +585,11 @@ button span i {
     }
     .container .leftContainer .myProfile .profImg .profInfo .info button {
         margin-top: 20px;
+    }
+    .container .rightContainer .lowerContainer .myServices .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
     }
 }
 
