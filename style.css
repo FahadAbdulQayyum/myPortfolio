@@ -8,15 +8,20 @@
 }
 
 :root {
-    --white: #fff;
+    /* --white: #fff; */
+    --white: #ffffff;
+    --dim-white: #f4f4f4;
+    /* --dim-white: #fafafa; */
     --favourite: #ffc500;
     --favourite1: rgb(211, 35, 211);
+    --underline: rgb(255, 217, 147);
     /* --favourite: rgb(240, 181, 72); */
     /* --favourite: orange; */
 }
 
 body {
     background-color: rgb(240, 235, 235);
+    /* background-color: #fafafa; */
     overflow-x: hidden;
 }
 
@@ -24,7 +29,7 @@ i {
     font-size: 23px !important;
 }
 
-p {
+p,small {
     font-size: 13px;
     color: gray;
 }
@@ -70,7 +75,7 @@ button span i {
     /* margin: 25px 0; */
     display: flex;
     flex-direction: column;
-    background-color: var(--white);
+    background-color: var(--dim-white);
     /* padding: 10px 0; */
     width: 30%;
     min-width: 250px;
@@ -211,7 +216,7 @@ button span i {
 }
 
 .container .rightContainer .cont {
-    background-color: var(--white);
+    background-color: var(--dim-white);
     margin: 0 0 35px 25px;
 }
 .container .rightContainer .navbar {
@@ -317,6 +322,86 @@ button span i {
     background-color: #000;
     border-radius: 50px;
     font-size: 27px !important;
+}
+
+/* .container .rightContainer .lowerContainer {
+    padding: 50px 30px;
+} */
+
+.container .rightContainer .lowerContainer .aboutMe {
+    padding: 50px 30px;
+    background-color: #ffffff;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+}
+
+.container .rightContainer .lowerContainer .aboutMe h4 {
+    margin-left: 3px;
+    z-index: 99;
+    position: absolute;
+}
+
+.container .rightContainer .lowerContainer .aboutMe .underline {
+    height: 8px;
+    width: 9%;
+    bottom: 155px;
+    position: absolute;
+    background-color: var(--underline);
+}
+
+.container .rightContainer .lowerContainer .aboutMe p {
+    margin-top: 50px;
+    line-height: 25px;
+}
+
+.container .rightContainer .lowerContainer .myServices {
+    padding: 50px 30px;
+    position: relative;
+}
+
+.container .rightContainer .lowerContainer .myServices h4 {
+    margin-left: 3px;
+    z-index: 99;
+    position: absolute;
+}
+
+.container .rightContainer .lowerContainer .myServices .underline {
+    height: 8px;
+    width: 11%;
+    bottom: 236px;
+    position: absolute;
+    background-color: var(--underline);
+}
+
+.container .rightContainer .lowerContainer .myServices .cards {
+    margin-top: 50px;
+    /* line-height: 25px; */
+    display: flex;
+}
+
+.container .rightContainer .lowerContainer .myServices .cards .card {
+    background-color: var(--white);
+    margin: 0 5px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container .rightContainer .lowerContainer .myServices .cards .card .logo {
+    border: 1px solid lightgray;
+    background-color: var(--dim-white);
+    width: 30px;
+    padding: 6px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+.container .rightContainer .lowerContainer .myServices .cards .card .logo img {
+    height: 20px;
+}
+.container .rightContainer .lowerContainer .myServices .cards .card h5 {
+    margin: 20px 0 10px 0;
 }
 
 /* responsiveness section starts */
