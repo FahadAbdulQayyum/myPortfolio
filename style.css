@@ -8,16 +8,11 @@
 }
 
 :root {
-    /* --white: #fff; */
     --white: #ffffff;
     --dim-white: #f4f4f4;
-    /* --dim-white: #fefefe; */
-    /* --dim-white: #fdfdfd; */
-    /* --dim-white: #fafafa; */
     --favourite: #ffc500;
     --favourite1: rgb(211, 35, 211);
     --underline: rgb(255, 217, 147);
-    /* --favourite: rgb(240, 181, 72); */
     /* --favourite: orange; */
 }
 
@@ -375,7 +370,9 @@ button span i {
     /* width: 11.2%; */
     width: 95px;
     /* bottom: 239px; */
-    bottom: 76.9%;
+    /* bottom: 76.9%; */
+    /* bottom: 82.5%; */
+    bottom: 77.5%;
     position: absolute;
     background-color: var(--underline);
 }
@@ -418,12 +415,38 @@ button span i {
     margin: 20px 0 10px 0;
 }
 
+.container .rightContainer .lowerContainer .skills .cards .design-skill .underline {
+    background-color: orange;
+    position: absolute;
+}
+.container .rightContainer .lowerContainer .skills .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    padding: 60px 30px;
+}
+
+.container .rightContainer .lowerContainer .skills .cards .code-skill .range,
+.container .rightContainer .lowerContainer .skills .cards .design-skill .range {
+    height: 5px;
+    background-color: orange;
+    width: 100%;
+}
+
+
 /* responsiveness section starts */
 
 @media screen and (max-width: 1240px) {
     .container .rightContainer .navbar ul li {
         padding: 0 10px;
         font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 1144px) {
+    .container .rightContainer .lowerContainer .myServices .underline {
+        bottom: 84%;
     }
 }
 
@@ -434,10 +457,18 @@ button span i {
     }
 }
 
+@media screen and (max-width: 1090px) {
+    .container .rightContainer .lowerContainer .aboutMe .underline {
+        bottom: 72%;
+    }
+}
 @media screen and (max-width: 1075px) {
     .container .rightContainer .navbar ul li {
         padding: 0 5px;
         font-size: .8rem;
+    }
+    .container .rightContainer .lowerContainer .aboutMe .underline {
+        bottom: 72%;
     }
 }
 
@@ -455,7 +486,6 @@ button span i {
     .container .upperContainer .navbar .rightNav ul li button span i {
         font-size: 1.28rem !important;
     }
-
 }
 
 @media screen and (max-width: 991px) {
@@ -485,6 +515,26 @@ button span i {
     }
     .container .rightContainer {
         margin: -10px;
+    }
+    .container .rightContainer .lowerContainer .aboutMe .underline {
+        bottom: 69%;
+    }
+    .container .rightContainer .lowerContainer .myServices .underline {
+        /* top: 60px; */
+        bottom: 82.5%;
+    }
+}
+
+@media screen and (max-width: 895px) {
+    .container .rightContainer .lowerContainer .myServices .underline {
+        top: 60px;
+        /* bottom: 74%; */
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .container .rightContainer .lowerContainer .aboutMe .underline {
+        top: 62px;
     }
 }
 
