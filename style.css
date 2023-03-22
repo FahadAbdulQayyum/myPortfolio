@@ -427,11 +427,28 @@ button span i {
     padding: 60px 30px;
 }
 
+.container .rightContainer .lowerContainer .skills .cards .design-skill h4,
+.container .rightContainer .lowerContainer .skills .cards .code-skill h4 {
+    margin-bottom: 30px;
+}
+
 .container .rightContainer .lowerContainer .skills .cards .code-skill .range,
 .container .rightContainer .lowerContainer .skills .cards .design-skill .range {
     height: 5px;
-    background-color: orange;
-    width: 100%;
+    background-color: lightgrey;
+    width: 365px;
+    width: 300px;
+    /* width: 100%; */
+    margin: 10px 0;
+}
+
+.container .rightContainer .lowerContainer .skills .cards .code-skill .range .rangeFilled,
+.container .rightContainer .lowerContainer .skills .cards .design-skill .range .rangeFilled {
+    height: 5px;
+    background-color: var(--favourite);
+    /* width: 200px; */
+    width: 70%;
+    border-radius: 50px;
 }
 
 
@@ -529,6 +546,10 @@ button span i {
     .container .rightContainer .lowerContainer .myServices .underline {
         top: 60px;
         /* bottom: 74%; */
+    }
+    .container .rightContainer .lowerContainer .skills .cards {
+        display: flex;
+        flex-direction: column;
     }
 }
 
