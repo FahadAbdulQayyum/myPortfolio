@@ -459,7 +459,19 @@ button span i {
 .container .rightContainer .lowerContainer .skills .cards .code-skill h4 {
     position: absolute;
     z-index: 99;
-    top: 25px;
+    top: 195px;
+}
+
+.container .rightContainer .lowerContainer .skills .cards .code-skill .underline {
+    height: 10px;
+    /* width: 11.3%; */
+    width: 37.5%;
+    background-color: orange;
+    /* background-color: red; */
+    position: absolute;
+    top: 35px;
+    left: -20px;
+    z-index: 19;
 }
 
 .container .rightContainer .lowerContainer .skills .cards .code-skill .range,
