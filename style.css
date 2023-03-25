@@ -429,7 +429,37 @@ button span i {
 
 .container .rightContainer .lowerContainer .skills .cards .design-skill h4,
 .container .rightContainer .lowerContainer .skills .cards .code-skill h4 {
+    margin-left: 5px;
     margin-bottom: 30px;
+}
+
+.container .rightContainer .lowerContainer .skills .cards {
+    position: relative;
+}
+
+/* .container .rightContainer .lowerContainer .skills .cards .design-skill .underline,
+.container .rightContainer .lowerContainer .skills .cards .code-skill .underline { */
+.container .rightContainer .lowerContainer .skills .cards .underline {
+    height: 10px;
+    /* width: 11.3%; */
+    width: 37.5%;
+    background-color: orange;
+    /* background-color: red; */
+    position: absolute;
+    top: 35px;
+    z-index: 9;
+}
+
+.container .rightContainer .lowerContainer .skills .cards .design-skill h4 {
+    position: absolute;
+    z-index: 99;
+    top: 25px;
+}
+
+.container .rightContainer .lowerContainer .skills .cards .code-skill h4 {
+    position: absolute;
+    z-index: 99;
+    top: 25px;
 }
 
 .container .rightContainer .lowerContainer .skills .cards .code-skill .range,
@@ -461,6 +491,13 @@ button span i {
     }
 }
 
+@media screen and (max-width: 1160px) {
+    .container .rightContainer .lowerContainer .skills .cards .design-skill .range,
+    .container .rightContainer .lowerContainer .skills .cards .code-skill .range {
+        width: 250px;
+    }
+}    
+
 @media screen and (max-width: 1144px) {
     .container .rightContainer .lowerContainer .myServices .underline {
         bottom: 84%;
@@ -486,6 +523,10 @@ button span i {
     }
     .container .rightContainer .lowerContainer .aboutMe .underline {
         bottom: 72%;
+    }
+    .container .rightContainer .lowerContainer .skills .cards .design-skill .range,
+    .container .rightContainer .lowerContainer .skills .cards .code-skill .range {
+        width: 215px;
     }
 }
 
@@ -540,6 +581,10 @@ button span i {
         /* top: 60px; */
         bottom: 82.5%;
     }
+    .container .rightContainer .lowerContainer .skills .cards .design-skill .range,
+    .container .rightContainer .lowerContainer .skills .cards .code-skill .range {
+        width: 290px;
+    }
 }
 
 @media screen and (max-width: 895px) {
@@ -550,6 +595,14 @@ button span i {
     .container .rightContainer .lowerContainer .skills .cards {
         display: flex;
         flex-direction: column;
+    }
+    .container .rightContainer .lowerContainer .skills .cards .design-skill .range,
+    .container .rightContainer .lowerContainer .skills .cards .code-skill .range {
+        width: 100%;
+        /* width: 590px; */
+    }
+    .container .rightContainer .lowerContainer .skills .cards .code-skill {
+        margin-top: 50px;
     }
 }
 
