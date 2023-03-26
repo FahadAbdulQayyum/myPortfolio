@@ -415,10 +415,6 @@ button span i {
     margin: 20px 0 10px 0;
 }
 
-.container .rightContainer .lowerContainer .skills .cards .design-skill .underline {
-    background-color: orange;
-    position: absolute;
-}
 .container .rightContainer .lowerContainer .skills .cards {
     display: flex;
     flex-direction: row;
@@ -433,45 +429,27 @@ button span i {
     margin-bottom: 30px;
 }
 
-.container .rightContainer .lowerContainer .skills .cards {
+
+.container .rightContainer .lowerContainer .skills .cards .code-skill ,
+.container .rightContainer .lowerContainer .skills .cards .design-skill {
+    display: flex;
+    flex-direction: column;
     position: relative;
 }
-
-/* .container .rightContainer .lowerContainer .skills .cards .design-skill .underline,
-.container .rightContainer .lowerContainer .skills .cards .code-skill .underline { */
-.container .rightContainer .lowerContainer .skills .cards .underline {
-    height: 10px;
-    /* width: 11.3%; */
-    width: 37.5%;
-    background-color: orange;
-    /* background-color: red; */
-    position: absolute;
-    top: 35px;
-    z-index: 9;
-}
-
+.container .rightContainer .lowerContainer .skills .cards .code-skill h4,
 .container .rightContainer .lowerContainer .skills .cards .design-skill h4 {
-    position: absolute;
     z-index: 99;
-    top: 25px;
 }
-
-.container .rightContainer .lowerContainer .skills .cards .code-skill h4 {
-    position: absolute;
-    z-index: 99;
-    top: 195px;
-}
-
-.container .rightContainer .lowerContainer .skills .cards .code-skill .underline {
+.container .rightContainer .lowerContainer .skills .cards .code-skill .underline,
+.container .rightContainer .lowerContainer .skills .cards .design-skill .underline {
     height: 10px;
-    /* width: 11.3%; */
-    width: 37.5%;
-    background-color: orange;
-    /* background-color: red; */
+    width: 95px;
+    background-color: var(--underline);
     position: absolute;
-    top: 35px;
-    left: -20px;
-    z-index: 19;
+    top: 10px;
+}
+.container .rightContainer .lowerContainer .skills .cards .code-skill .underline {
+    width: 83px;
 }
 
 .container .rightContainer .lowerContainer .skills .cards .code-skill .range,
