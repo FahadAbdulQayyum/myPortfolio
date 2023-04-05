@@ -471,6 +471,56 @@ button span i {
     border-radius: 50px;
 }
 
+/* .resume{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+.subresume {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.subresume .round {
+    background-color: var(--favourite);
+    height: 10px;
+    width: 10px;
+    padding: 20px;
+    border-radius:50px;
+}
+
+.subresume .dot {
+    background-color: var(--favourite);
+    height: 1px;
+    width: 1px;
+    padding: 4px;
+    border-radius: 50px;
+}
+
+.big {
+    margin-bottom: 30px;
+}
+
+.subresume .leftResume {
+    display: flex;
+}
+
+.subresume .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subresume .left {
+    background-color: grey;
+    width: 1px;
+    height: 80px;
+    padding: .5px;
+    /* z-index: 999; */
+}
 
 /* responsiveness section starts */
 
