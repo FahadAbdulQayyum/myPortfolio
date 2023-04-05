@@ -486,22 +486,36 @@ button span i {
 
 .subresume .round {
     background-color: var(--favourite);
-    height: 10px;
-    width: 10px;
-    padding: 20px;
+    height: 15px;
+    width: 15px;
+    padding: 25px;
     border-radius:50px;
+    position: relative;
+    z-index: 99;
 }
 
 .subresume .dot {
     background-color: var(--favourite);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 1px;
     width: 1px;
     padding: 4px;
     border-radius: 50px;
+    position: relative;
+    z-index: 99;
+}
+
+.subresume .dot .sm {
+    content: "";
+    background-color: #fff;
+    padding: 2px;
+    border-radius: 50px;
 }
 
 .big {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .subresume .leftResume {
@@ -511,15 +525,46 @@ button span i {
 .subresume .left {
     display: flex;
     flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+}
+
+.subresume .left::before {
+    content: "";
+    background-color: lightgrey;
+    width: .5px;
+    height: 90px;
+    padding: .5px;
+    /* padding: 5px; */
+    position: absolute;
+    z-index: 1;
+}
+
+.subresume .leftResume .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.subresume .left {
-    background-color: grey;
-    width: 1px;
-    height: 80px;
-    padding: .5px;
-    /* z-index: 999; */
+.subresume .leftResume .info .subinfo {
+    margin-top: 12px;
+}
+
+.h4 {
+    margin-left: -40px;
+    margin-top: 15px;
+}
+
+.h4.edu {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.subresume .leftResume .info .subinfo .intro {
+    display: block;
+    margin-top: 10px;
 }
 
 /* responsiveness section starts */
