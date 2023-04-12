@@ -851,6 +851,12 @@ button span i {
     }
 }
 
+@media screen and (max-width: 502px){
+    .resume .edu.h4 {
+        margin-bottom: 15px !important;
+    }
+}
+
 @media screen and (max-width: 485px) {
     .container .leftContainer {
         height: 62vh;
