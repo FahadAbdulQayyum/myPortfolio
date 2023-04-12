@@ -478,10 +478,34 @@ button span i {
     align-items: center;
 } */
 
+.resume {
+    /* margin: 10px 40px; */
+    background-color: var(--white);
+    position: relative;
+}
+
+.resume h4 {
+    margin: 0 40px;
+    position: inherit;
+    z-index: 999;
+    margin-bottom: 10px;
+}
+
+.resume .underline {
+    background-color: var(--underline);
+    height: 10px;
+    /* width: 8%; */
+    width: 68px;
+    position: relative;
+    top: -20px;
+    left: 35px;
+}
+
 .subresume {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0 40px;
 }
 
 .subresume .round {
@@ -557,9 +581,12 @@ button span i {
     margin-top: 15px;
 }
 
+.h4.work,
 .h4.edu {
-    margin-left: 20px;
-    margin-top: 15px;
+    margin: 15px 0 35px 20px !important;
+    /* margin-left: 50px !important;
+    margin-top: -15px !important; */
+    width: 100%;
 }
 
 .subresume .leftResume .info .subinfo .intro {
@@ -701,6 +728,28 @@ button span i {
     .container .rightContainer .navbar ul li {
         padding: 0 5px;
         font-size: .8rem;
+    }
+    .subresume {
+        display: flex;
+        flex-direction: column;
+    }
+    .subresume .rightResume,
+    .subresume .leftResume {
+        margin-bottom: 20px;
+    }
+    .resume {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .resume > h4 {
+        width: 83%;
+    }
+    .resume .underline {
+        position: absolute;
+        top: 10px;
+        left: 18px;
     }
 }
 
